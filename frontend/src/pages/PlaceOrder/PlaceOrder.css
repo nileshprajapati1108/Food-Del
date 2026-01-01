@@ -1,0 +1,131 @@
+.place-order {
+  display: flex;
+  gap: 40px;
+  padding: 120px 7vw 60px;
+  background: #f8f8f8;
+  min-height: 100vh;
+}
+
+/* LEFT FORM */
+.place-order-left {
+  flex: 2;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  border: 1px solid #e6e6e6;
+}
+
+.place-order-left .title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+.place-order-left input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  margin-bottom: 16px;
+  outline: none;
+  transition: 0.25s;
+  background: #fff;
+}
+
+.place-order-left input::placeholder {
+  color: #999;
+}
+
+.place-order-left input:focus {
+  border-color: #ff4c24;
+  box-shadow: 0 0 0 2px rgba(255, 76, 36, 0.15);
+}
+
+/* ROW */
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+/* RIGHT SIDE */
+.place-order-right {
+  flex: 1;
+}
+
+/* ORDER SUMMARY */
+.order-summary {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #e6e6e6;
+}
+
+.order-summary h2 {
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+/* SUMMARY ROWS */
+.summary-row,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: 14px 0;
+  color: #444;
+}
+
+.summary-total {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* DIVIDER */
+.order-summary hr {
+  border: none;
+  height: 1px;
+  background: #eee;
+  margin: 18px 0;
+}
+
+/* BUTTON */
+.order-summary button {
+  width: 100%;
+  margin-top: 22px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background: #ff4c24;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-summary button:hover {
+  background: #e6441f;
+}
+
+/* SECURE TEXT */
+.secure-text {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-top: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .place-order {
+    flex-direction: column;
+    padding: 110px 5vw 40px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
