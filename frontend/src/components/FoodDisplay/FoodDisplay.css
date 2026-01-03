@@ -12,3 +12,8 @@
   gap: 30px;
   row-gap:50px ;
 }
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 1 row = 4 items */
+  gap: 30px;
+}

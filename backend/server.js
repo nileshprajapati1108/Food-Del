@@ -11,17 +11,11 @@ import orderRouter from "./routes/orderRoute.js";
 
 //app config
 const app =express()
-const port = 4000
+const port = process.env.PORT || 4000;
 
 //middleware
 app.use(express.json())
-app.use(cors({
-  origin: "https://food-del-nine-swart.vercel.app",
-  methods: ["GET","POST","PUT","DELETE"],
-  credentials: true
-}))
-
-
+app.use(cors())
 
 //db connection
 connectDb();
