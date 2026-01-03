@@ -6,7 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // PLACE ORDER
 const placeOrder = async (req, res) => {
-  const frontend_url = "https://food-del-frontend-rvuy.onrender.com/myorder";
+  const frontend_url = "https://food-del-frontend-rvuy.onrender.com/myorders";
 
   try {
     const newOrder = new orderModel({
